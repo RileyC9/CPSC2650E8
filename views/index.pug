@@ -2,3 +2,8 @@ extends layout
 
 block content
   h1= title
+  p=greeting
+  if loggedIn
+    a(href="/logout") Logout
+  else 
+    a(href="/auth/google") Login
